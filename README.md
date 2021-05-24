@@ -1,4 +1,4 @@
-# tqdm_logger
+# TQDM Logger
 
 >> A utility to log tqdm progress bars into a file instead of stdout.
 
