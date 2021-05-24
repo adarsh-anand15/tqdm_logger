@@ -1,1 +1,3 @@
 .vscode
+tqdm_logger.egg-info/
+__pycache__/
