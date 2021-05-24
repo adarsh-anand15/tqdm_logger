@@ -11,6 +11,7 @@ __url__          = 'https://github.com/adarsh-anand15/tqdm_logger'
 
 
 import io
+import os
 
 __all__ = ['TqdmLogger']
 
@@ -37,6 +38,12 @@ class TqdmLogger(io.StringIO):
         self.logger = log_file
         self.buf = ''
         self.bar_index = -1
+
+        # Create the log file if it doesn't already exists
+        if not os.path.isfile(self.logger):
+            fstream = open(self.logger, 'w')
+            fstream.close()
+
         
     def reset(self):
         """
