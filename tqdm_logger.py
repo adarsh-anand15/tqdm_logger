@@ -5,7 +5,7 @@ A Utility to redirect tqdm progress bar to a log file instead of stdout.
 
 __version__      = '1.0.0d'
 __author__       = 'Adarsh Anand'
-__author_email__ = 'adarsh.anand15@gmail.com'
+__author_email__ = 'adarsh.a1@karza.in'
 __license__      = 'GNU General Public License v3.0'
 __url__          = 'https://github.com/adarsh-anand15/tqdm_logger'
 
