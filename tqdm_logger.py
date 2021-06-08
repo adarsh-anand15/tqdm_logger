@@ -5,7 +5,7 @@ A Utility to redirect tqdm progress bar to a log file instead of stdout.
 
 __version__      = '1.0.0d'
 __author__       = 'Adarsh Anand'
-__author_email__ = 'adarsh.a1@karza.in'
+__author_email__ = 'adarsh.a@karza.in'
 __license__      = 'GNU General Public License v3.0'
 __url__          = 'https://github.com/adarsh-anand15/tqdm_logger'
 
@@ -53,12 +53,17 @@ class TqdmLogger(io.StringIO):
 
         self.bar_index = -1
         
-    def write(self, buf):
+    def write(self, buf, log_type = None):
         """
-        Capture the buf to be written.
+        Capture the buf to be written incase of progress bar else flush the buf to log file.
         """
-
-        self.buf = buf.strip('\r\n\t ')
+        
+        if buf.strip() and (log_type == 'text' or ('it/s' not in buf.strip() and 's/it' not in buf.strip())):
+            with open(self.logger, 'a') as ofile:
+                ofile.write(buf.strip() + '\n')
+                ofile.flush()
+        else:
+            self.buf = buf.strip('\r\n\t ')
     
     def flush(self):
         """
