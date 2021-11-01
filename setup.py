@@ -5,7 +5,7 @@ setup(
     scripts=['tqdm_logger.py'],
     description='TQDM Logging utility',
     version='1.0.0',
-    url=['https://bitbucket.org/karzads/tqdm_logger/', ],
+    url=['https://bitbucket.org/karzads/tqdm_logger/', 'https://github.com/adarsh-anand15/tqdm_logger'],
     author='Adarsh Anand',
     author_email=['adarsh.a@karza.in', 'adarsh.anand15@gmail.com'],
 )
