@@ -13,6 +13,7 @@ Use the TqdmLogger class to declare a log stream handler with a log file, and pa
 ### Example Usage
 
 ~~~python
+
 import time
 
 from tqdm_logger import TqdmLogger
@@ -26,3 +27,4 @@ tqdm_stream.reset()
 for x in tqdm(range(100), file = tqdm_stream):
 
     time.sleep(.5)
+~~~
