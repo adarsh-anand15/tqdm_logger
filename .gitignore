@@ -2,3 +2,4 @@
 tqdm_logger.egg-info/
 __pycache__/
 .ipynb_checkpoints/
+dist/
