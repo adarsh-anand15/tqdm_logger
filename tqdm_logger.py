@@ -3,11 +3,11 @@
 A Utility to redirect tqdm progress bar to a log file instead of stdout.
 """
 
-__version__      = '1.0.0'
+__version__      = '1.0.1'
 __author__       = 'Adarsh Anand'
 __author_email__ = ['adarsh.a@karza.in', 'adarsh.anand15@gmail.com']
 __license__      = 'GNU General Public License v3.0'
-__url__          = ['https://bitbucket.org/karzads/tqdm_logger/', 'https://github.com/adarsh-anand15/tqdm_logger']
+__url__          = 'https://github.com/adarsh-anand15/tqdm_logger'
 
 
 import io
